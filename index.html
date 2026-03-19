@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Tolea WIP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <svg
+            width="200"
+            height="56"
+            viewBox="0 0 200 56"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <!-- glass gradient -->
+              <linearGradient
+                id="glassGrad"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" stop-color="#a5b4fc" stop-opacity="0.9" />
+                <stop offset="50%" stop-color="#60a5fa" stop-opacity="0.7" />
+                <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.9" />
+              </linearGradient>
+
+              <!-- soft highlight -->
+              <linearGradient id="shine" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#ffffff" stop-opacity="0.7" />
+                <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+              </linearGradient>
+
+              <!-- blur filter for glass effect -->
+              <filter id="blur">
+                <feGaussianBlur stdDeviation="2" />
+              </filter>
+            </defs>
+
+            <!-- glass icon base -->
+            <rect
+              x="4"
+              y="6"
+              width="44"
+              height="44"
+              rx="14"
+              fill="url(#glassGrad)"
+              opacity="0.85"
+            />
+
+            <!-- glossy highlight -->
+            <rect
+              x="6"
+              y="8"
+              width="40"
+              height="18"
+              rx="10"
+              fill="url(#shine)"
+              filter="url(#blur)"
+            />
+
+            <!-- minimal cube/lightbox -->
+            <path
+              d="M26 16 L34 20 L26 24 L18 20 Z"
+              fill="#ffffff"
+              opacity="0.9"
+            />
+            <path
+              d="M18 20 L26 24 L26 34 L18 30 Z"
+              fill="#ffffff"
+              opacity="0.6"
+            />
+            <path
+              d="M34 20 L26 24 L26 34 L34 30 Z"
+              fill="#ffffff"
+              opacity="0.75"
+            />
+
+            <!-- brand text -->
+            <text
+              x="64"
+              y="34"
+              font-family="system-ui, -apple-system, Segoe UI, sans-serif"
+              font-size="24"
+              font-weight="600"
+              fill="#111827"
+            >
+              Lightbox
+            </text>
+          </svg>
+        </div>
+        <nav class="header-nav">
+          <a href="#my-work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-cta">
+          <a href="#contact">Work with me</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section" id="hero-section">
+        <div class="container">
+          <a href="#contact" class="announcement-bar"
+            >🌐 Now Global: Offering 24/7 editing support across all time
+            zones.</a
+          >
+          <div class="hero-text">
+            <h1>Cinematic Stories<br />Perfectly Cut.</h1>
+            <p>
+              I transform raw footage into high-impact visual experiences<br />that
+              capture attention and never let go
+            </p>
+          </div>
+          <a href="#contact" class="hero-cta">Start Your Project</a>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <div class="features-grid">
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-cube-send"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 12.5l-5 -3l5 -3l5 3v5.5l-5 3l0 -5.5" /><path d="M11 9.5v5.5l5 3" /><path d="M16 12.545l5 -3.03" /><path d="M7 9h-5" /><path d="M7 12h-3" /><path d="M7 15h-1" /></svg>
+              </div>
+              <h2 class="card-title">Fast Turnaround</h2>
+              <p class="card-text">
+                I deliver polished videos in record time, so you can share your
+                story without delay.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-pencil-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" /><path d="M13.5 6.5l4 4" /><path d="M16 19h6" /><path d="M19 16v6" /></svg>
+              </div>
+              <h2 class="card-title">Creative Storytelling</h2>
+              <p class="card-text">
+                I craft compelling narratives that captivate your audience and
+                elevate your brand.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-package"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5" /><path d="M12 12l8 -4.5" /><path d="M12 12l0 9" /><path d="M12 12l-8 -4.5" /><path d="M16 5.25l-8 4.5" /></svg>
+              </div>
+              <h2 class="card-title">Custom Packages</h2>
+              <p class="card-text">
+                Tailored editing solutions to fit your unique needs and budget.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
