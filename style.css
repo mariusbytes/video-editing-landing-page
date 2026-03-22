@@ -36,6 +36,17 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  transition:
+    color 0.3s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+a:hover,
+a:focus-visible {
+  opacity: 0.85;
 }
 
 ul {
@@ -175,11 +186,29 @@ section {
 .header-nav a {
   color: var(--text-gray);
   font-weight: 500;
-  transition: color 0.3s ease;
+  position: relative;
 }
 
 .header-nav a:hover {
   color: var(--text-dark);
+}
+
+.header-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.25rem;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.header-nav a:hover::after,
+.header-nav a:focus-visible::after {
+  transform: scaleX(1);
 }
 
 .header-cta a {
@@ -188,23 +217,26 @@ section {
     var(--primary-color),
     var(--primary-hover)
   );
+  background-size: 200% 200%;
+  background-position: 0% 50%;
   color: white;
   padding: 0.5rem 1.5rem;
   border-radius: 2rem;
   font-weight: 600;
   box-shadow: var(--shadow);
-  transition: all 0.3s ease;
+  transition:
+    background-position 0.35s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .header-cta a:hover,
 .header-cta a:focus {
-  background: linear-gradient(
-    135deg,
-    var(--primary-hover),
-    var(--primary-active)
-  );
+  background-position: 100% 50%;
   box-shadow: var(--shadow-hover);
   transform: translateY(-1px);
+  opacity: 1;
 }
 
 /* Hero */
@@ -226,18 +258,26 @@ section {
 
 .announcement-bar {
   background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  background-size: 200% 200%;
+  background-position: 0% 50%;
   border: 1px solid var(--primary-color);
   border-radius: 2rem;
   padding: 0.5rem 1rem;
   margin-bottom: 3rem;
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition:
+    background-position 0.35s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    opacity 0.3s ease;
   box-shadow: var(--shadow);
 }
 
 .announcement-bar:hover {
-  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  background-position: 100% 50%;
   box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+  opacity: 1;
 }
 
 .hero-text h1 {
@@ -264,24 +304,27 @@ section {
     var(--primary-color),
     var(--primary-hover)
   );
+  background-size: 200% 200%;
+  background-position: 0% 50%;
   color: white;
   padding: 1rem 2rem;
   border-radius: 2rem;
   font-size: 1.25rem;
   font-weight: 600;
   box-shadow: var(--shadow);
-  transition: all 0.3s ease;
+  transition:
+    background-position 0.35s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .hero-section .hero-cta:hover,
 .hero-section .hero-cta:focus {
-  background: linear-gradient(
-    135deg,
-    var(--primary-hover),
-    var(--primary-active)
-  );
+  background-position: 100% 50%;
   box-shadow: var(--shadow-hover);
   transform: translateY(-2px);
+  opacity: 1;
 }
 
 /* Features */
