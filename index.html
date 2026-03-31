@@ -17,7 +17,6 @@
             xmlns="http://www.w3.org/2000/svg"
           >
             <defs>
-              <!-- glass gradient -->
               <linearGradient
                 id="glassGrad"
                 x1="0%"
@@ -30,19 +29,16 @@
                 <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.9" />
               </linearGradient>
 
-              <!-- soft highlight -->
               <linearGradient id="shine" x1="0%" y1="0%" x2="0%" y2="100%">
                 <stop offset="0%" stop-color="#ffffff" stop-opacity="0.7" />
                 <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
               </linearGradient>
 
-              <!-- blur filter for glass effect -->
               <filter id="blur">
                 <feGaussianBlur stdDeviation="2" />
               </filter>
             </defs>
 
-            <!-- glass icon base -->
             <rect
               x="4"
               y="6"
@@ -53,7 +49,6 @@
               opacity="0.85"
             />
 
-            <!-- glossy highlight -->
             <rect
               x="6"
               y="8"
@@ -64,7 +59,6 @@
               filter="url(#blur)"
             />
 
-            <!-- minimal cube/lightbox -->
             <path
               d="M26 16 L34 20 L26 24 L18 20 Z"
               fill="#ffffff"
@@ -81,7 +75,6 @@
               opacity="0.75"
             />
 
-            <!-- brand text -->
             <text
               x="64"
               y="34"
@@ -105,11 +98,12 @@
         </div>
       </div>
     </header>
+
     <main>
       <section class="hero-section" id="hero-section">
         <div class="container">
           <a href="#contact" class="announcement-bar"
-            >🌐 Now Global: Offering 24/7 editing support across all time
+            >Now Global: Offering 24/7 editing support across all time
             zones.</a
           >
           <div class="hero-text">
@@ -128,7 +122,25 @@
           <div class="features-grid">
             <article class="card">
               <div class="card-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-cube-send"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 12.5l-5 -3l5 -3l5 3v5.5l-5 3l0 -5.5" /><path d="M11 9.5v5.5l5 3" /><path d="M16 12.545l5 -3.03" /><path d="M7 9h-5" /><path d="M7 12h-3" /><path d="M7 15h-1" /></svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M16 12.5l-5 -3l5 -3l5 3v5.5l-5 3l0 -5.5" />
+                  <path d="M11 9.5v5.5l5 3" />
+                  <path d="M16 12.545l5 -3.03" />
+                  <path d="M7 9h-5" />
+                  <path d="M7 12h-3" />
+                  <path d="M7 15h-1" />
+                </svg>
               </div>
               <h2 class="card-title">Fast Turnaround</h2>
               <p class="card-text">
@@ -138,7 +150,25 @@
             </article>
             <article class="card">
               <div class="card-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-pencil-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" /><path d="M13.5 6.5l4 4" /><path d="M16 19h6" /><path d="M19 16v6" /></svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"
+                  />
+                  <path d="M13.5 6.5l4 4" />
+                  <path d="M16 19h6" />
+                  <path d="M19 16v6" />
+                </svg>
               </div>
               <h2 class="card-title">Creative Storytelling</h2>
               <p class="card-text">
@@ -148,7 +178,24 @@
             </article>
             <article class="card">
               <div class="card-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-package"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5" /><path d="M12 12l8 -4.5" /><path d="M12 12l0 9" /><path d="M12 12l-8 -4.5" /><path d="M16 5.25l-8 4.5" /></svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5" />
+                  <path d="M12 12l8 -4.5" />
+                  <path d="M12 12l0 9" />
+                  <path d="M12 12l-8 -4.5" />
+                  <path d="M16 5.25l-8 4.5" />
+                </svg>
               </div>
               <h2 class="card-title">Custom Packages</h2>
               <p class="card-text">
@@ -158,36 +205,147 @@
           </div>
         </div>
       </section>
-      <section class="portfolio">
+
+      <section class="portfolio" id="my-work">
         <div class="container">
           <h2 class="section-title">My Latest Work</h2>
           <p class="section-paragraph">Here are some of my recent projects:</p>
           <div class="portfolio-grid">
-            <div class="card-image img">
+            <div class="card-image">
               <img src="https://picsum.photos/300" alt="Project 1" />
             </div>
-            <div class="card-image img">
+            <div class="card-image">
               <img src="https://picsum.photos/300" alt="Project 2" />
             </div>
-            <div class="card-image img">
+            <div class="card-image">
               <img src="https://picsum.photos/300" alt="Project 3" />
             </div>
-            <div class="card-image img">
+            <div class="card-image">
               <img src="https://picsum.photos/300" alt="Project 4" />
             </div>
-            <div class="card-image img">
+            <div class="card-image">
               <img src="https://picsum.photos/300" alt="Project 5" />
             </div>
-            <div class="card-image img">
+            <div class="card-image">
               <img src="https://picsum.photos/300" alt="Project 6" />
+            </div>
           </div>
         </div>
-      </section>  
-      <footer class="footer">
+      </section>
+
+      <section class="services" id="services">
         <div class="container">
-          <p>&copy; 2026 Lightbox. All rights reserved.</p>
+          <h2 class="section-title">Services Built Around Your Footage</h2>
+          <p class="section-paragraph">
+            Flexible editing support for creators, brands, and campaigns that
+            need clean delivery and strong pacing.
+          </p>
+          <div class="services-grid">
+            <article class="card service-card">
+              <span class="service-label">Short-form</span>
+              <h3 class="card-title">Reels, Shorts, TikToks</h3>
+              <p class="card-text">
+                Fast, punchy edits with captions, hooks, motion, and rhythm
+                tuned for scroll-stopping content.
+              </p>
+            </article>
+            <article class="card service-card">
+              <span class="service-label">Long-form</span>
+              <h3 class="card-title">YouTube and Brand Videos</h3>
+              <p class="card-text">
+                Full narrative edits with clean structure, sound polish, and a
+                pace that keeps viewers engaged.
+              </p>
+            </article>
+            <article class="card service-card">
+              <span class="service-label">Polish</span>
+              <h3 class="card-title">Color, Captions, Delivery</h3>
+              <p class="card-text">
+                Final-pass finishing for export, subtitles, brand consistency,
+                and platform-ready formats.
+              </p>
+            </article>
+          </div>
         </div>
-      </footer>
+      </section>
+
+      <section class="pricing" id="pricing">
+        <div class="container">
+          <h2 class="section-title">Simple Pricing</h2>
+          <p class="section-paragraph">
+            Start with a package, then adjust scope based on your volume and
+            turnaround needs.
+          </p>
+          <div class="pricing-grid">
+            <article class="card pricing-card">
+              <p class="pricing-tier">Starter</p>
+              <h3 class="pricing-price">$150<span>/project</span></h3>
+              <p class="card-text">
+                Best for single edits, quick promos, and lightweight social
+                content.
+              </p>
+              <ul class="pricing-list">
+                <li>Up to 60 seconds</li>
+                <li>2 revision rounds</li>
+                <li>48 hour delivery</li>
+              </ul>
+            </article>
+            <article class="card pricing-card pricing-card-featured">
+              <p class="pricing-tier">Pro</p>
+              <h3 class="pricing-price">$400<span>/package</span></h3>
+              <p class="card-text">
+                Ideal for regular posting schedules and stronger branded
+                content.
+              </p>
+              <ul class="pricing-list">
+                <li>3 short-form videos</li>
+                <li>Priority turnaround</li>
+                <li>Captions and sound polish</li>
+              </ul>
+            </article>
+            <article class="card pricing-card">
+              <p class="pricing-tier">Custom</p>
+              <h3 class="pricing-price">Let's talk</h3>
+              <p class="card-text">
+                For retainers, long-form editing, and larger campaign work with
+                ongoing support.
+              </p>
+              <ul class="pricing-list">
+                <li>Flexible monthly scope</li>
+                <li>Dedicated workflow</li>
+                <li>Custom delivery timeline</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact-panel">
+            <div class="contact-copy">
+              <p class="contact-kicker">Ready to start?</p>
+              <h2 class="section-title">Send the footage. I'll handle the cut.</h2>
+              <p class="section-paragraph">
+                If you already know the style, deadline, or platform, send that
+                over and I can give you a clear next step fast.
+              </p>
+            </div>
+            <div class="contact-actions">
+              <a href="mailto:hello@lightbox.com" class="hero-cta"
+                >hello@lightbox.com</a
+              >
+              <a href="#hero-section" class="contact-link">Back to top</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Lightbox. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
